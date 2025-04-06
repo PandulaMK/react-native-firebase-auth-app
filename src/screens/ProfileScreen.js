@@ -1,19 +1,22 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import auth from '@react-native-firebase/auth'; // Import Firebase Auth
 
 const ProfileScreen = ({ navigation }) => {
+  const user = auth().currentUser; // Get the current user
+
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>My App</Text>
+      <Text style={styles.title}>Profile</Text>
 
       <View style={styles.infoBox}>
         <Text style={styles.label}>Name</Text>
-        <Text style={styles.value}>Example Application</Text>
+        <Text style={styles.value}>{user?.displayName || 'No name set'}</Text>
       </View>
 
       <View style={styles.infoBox}>
         <Text style={styles.label}>Email</Text>
-        <Text style={styles.value}>example@app.com</Text>
+        <Text style={styles.value}>{user?.email}</Text>
       </View>
 
       <TouchableOpacity onPress={() => navigation.navigate('Login')}>
