@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "792697378734",
+    "project_id": "rnapp-c327c",
+    "storage_bucket": "rnapp-c327c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:792697378734:android:9d3a0dd786f7a122a65a3f",
+        "android_client_info": {
+          "package_name": "com.rnapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbnRAN3XlqkjUvmfhdIgONVhq822mPuEc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
